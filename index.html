@@ -4,6 +4,7 @@
 	<title>Monxtro Fit</title>
 	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.png" />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/78de45e356.js"></script>
@@ -14,19 +15,19 @@
 			<nav>
 				<a href="#"><img class="logo" src="img/monxtrologo.png"></a>
 				<ul class="navbar-items">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Planos</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="#sessao-home">Home</a></li>
+					<li><a href="#sessao-planos">Planos</a></li>
+					<li><a href="#sessao-contato">Contato</a></li>
 					<li><a href="#" class="default-btn">Login</a></li>
 				</ul>
 
 			</nav>
 		</div>
-		<main>
+		<main id="sessao-home">
 			<div class="main-banner">
 				<div class="slogan">
 					<h1>Monxtro Fit</h1>
-					<p>Sua saúde e performance em primeiro lugar!</p>
+					<p>Novo conceito no treino funcional!</p>
 				</div>
 			</div>
 			<section class="specialties-container">
@@ -48,7 +49,7 @@
 					</li>
 				</ul>
 			</section>
-			<section class="pricing-container">
+			<section id="sessao-planos" class="pricing-container">
 				<h1>Planos e Preços</h1>
 				<p>Selecione o plano perfeito para você</p>
 				<div class="plans-container">
@@ -58,9 +59,9 @@
 							<li class="plan-name">Frango</li>
 							<li>Musculação ou Funcional</li>
 							<li>3 dias na semana</li>
-							<li>Avaliação Física</li>
+							<li class="tachado">Avaliação Física</li>
 							<li>Brinde</li>
-							<li>Estacionamento</li>
+							<li class="tachado">Estacionamento</li>
 							<li class="plan-btn">Selecionar</li>
 						</ul>
 					</div>
@@ -72,13 +73,13 @@
 							<li>Segunda a Sábado</li>
 							<li>Avaliação Física</li>
 							<li>Brinde</li>
-							<li>Estacionamento</li>
+							<li class="tachado">Estacionamento</li>
 							<li class="plan-btn">Selecionar</li>
 						</ul>
 					</div>
 					<div class="plan">
 						<ul>
-							<li class="price recommended">R$ 111/mês</li>
+							<li class="price recommended">R$ 120/mês</li>
 							<li class="plan-name">Monxtro</li>
 							<li>Musculação + Funcional</li>
 							<li>Segunda a Sábado</li>
@@ -103,20 +104,20 @@
 				</div>
 			</section>
 			<section class="searchdomain-container">
-				<h2>Buscar uma MF</h2>
-				<p>Veja se existe uma Monxtro Fit perto de você:</p>
+				<h2>Encontre uma MF!</h2>
+				<p>Procure uma Monxtro Fit perto de você:</p>
 				<form>
-					<input type="text" name="domain" placeholder="Digite a cidade desejada">
+					<input type="text" name="domain" required="" placeholder="Digite a cidade desejada">
 					<input type="submit" name="Buscar Cidade">
 				</form>
 			</section>
-			<section class="contact-container">
+			<section id="sessao-contato" class="contact-container">
 				<h2>Entre em contato</h2>
 				<p>Envie uma mensagem para nós com sua dúvida que estaremos prontos para responder.</p>
 				<form>
-					<input type="text" name="name" placeholder="Seu nome">
-					<input type="email" name="email" placeholder="Seu e-mail">
-					<textarea name="message" placeholder="Digite sua mensagem"></textarea>
+					<input type="text" name="name" required="" placeholder="Seu nome">
+					<input type="email" name="email" required="" placeholder="Seu e-mail">
+					<textarea name="message" required="" placeholder="Digite sua mensagem"></textarea>
 					<input type="submit" name="Enviar">
 				</form>
 			</section>
